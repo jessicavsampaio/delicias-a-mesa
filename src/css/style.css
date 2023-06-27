@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #FFDB63;
+    --tertiary-bg-color: #FFE9A1;
+    --main-text-color: #2C2B2B;
+    --secondary-text-color: #F5F2F2;
+    --tertiary-text-color: #858585;
+}
+
+body {
+    background-color: var(--secondary-bg-color);
+}
+
+.header {
+    background-color: var(--main-bg-color);
+    margin-top: 3rem;
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-img {
+    height: 3.1rem;
+}
+
+.nav {
+    display: flex;
+    gap: 4.6rem;
+}
+
+.nav-link {
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.header-input-search {
+    border: none;
+    color: var(--tertiary-text-color);
+    background-color: var(--secondary-text-color);
+    border-radius: 2.25rem;
+    width: 25.8rem;
+    height: 4.5rem;
+    padding-left: 5rem;
+    background-image: url('../images/icone-search.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 2.3rem;
+}
+
+.banner {
+    height: 40rem;
+    background-image: url('../images/breakfast.png');
+    background-size: cover;
+    background-position-y: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 66rem;
+}
+
+.banner-content-h1 {
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.main-container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.main-h2,
+.sobre-nos-h2 {
+    margin: 4.8rem 0;
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: var(--main-text-color);
+}
+
+.main-cards {
+    display: flex;
+    gap: 11.5rem;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-text-color);
+    border-radius: 3.3rem;
+    width: 40rem;
+}
+
+.main-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.9rem 3.8rem;
+    justify-content: center;
+}
+
+.main-card-content-h3,
+.sobre-nos-h3 {
+    color: var(--main-text-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+
+.main-card-content-p {
+    color: var(--main-text-color);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+/* CARDS DA PÁGINA DE RECEITAS */
+
+.main-card-content-link {
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    border-radius: 3.2rem;
+    padding: 0.9rem 3.3rem;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 17.7rem;
+}
+
+.main-cards-horizontal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.5rem;
+}
+
+.main-card-horizontal {
+    display: flex;
+    background-color: var(--secondary-text-color);
+    border-radius: 3.3rem;
+    width: 70%;
+}
+
+/* PÁGINA SOBRE NÓS */
+.sobre-nos-container {
+    background-color: var(--main-bg-color);
+    padding: 4.8rem 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nos-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-nos-p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+}
+
+/* PÁGINA RECEITAS */
+.cabecalho-botao {
+    background-color: var(--main-bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+.cabecalho-botao:hover img {
+    filter: opacity(50%);
+}
+
+.receita-container {
+    background-color: var(--main-bg-color);
+    padding: 4.8rem 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.receita-container-h3 {
+    font-weight: 700;
+}
+
+.receita-container-text {
+    font-weight: 400;
+    padding-left: 2.5rem;
+}
+
+.main-card-content-link:hover {
+    background-color: #FFE9A1;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 2rem;
+}
+
+.footer h4 a {
+    text-decoration: underline;
+    color: #2C2B2B;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35rem;
+    height: 27.3rem;
+    padding: 0 25rem;
+}
+
+.footer-image {
+    height: 5.6rem;
+}
+
+.footer-social-media {
+    font-size: 2.6rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    color: var(--main-text-color);
+}
+
+.footer-social-media-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer-social-media-icon {
+    background-color: var(--tertiary-bg-color);
+    padding: 1.1rem 0.8rem;
+    border-radius: 0.7rem;
+}
+
+.footer-social-media-icon:hover {
+    background-color: var(--main-bg-color);
+}
