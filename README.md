@@ -7,7 +7,7 @@ Você pode acessar o preview do site em: [@DeliciasÀMesa](https://jessicavsampa
 
 ![homeDeliciasAMesa](src/images/pagina-principal.png)
 
-##
+
 ## 🛠️ Tecnologias
 * HTML
 * CSS
